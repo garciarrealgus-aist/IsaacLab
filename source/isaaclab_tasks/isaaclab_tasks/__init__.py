@@ -29,3 +29,6 @@ from .utils import import_packages
 _BLACKLIST_PKGS = ["utils", ".mdp", "pick_place"]
 # Import all configs in this package
 import_packages(__name__, _BLACKLIST_PKGS)
+
+# Add this at the end of the file
+from .manager_based.ur5e_pick_and_place import UR5ePickAndPlaceEnv, UR5ePickAndPlaceEnvCfg # noqa: F401
